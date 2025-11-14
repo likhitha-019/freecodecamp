@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-color: pink;
+      }
+
+      .list {
+        width: 300px;
+        height: 500px;
+        margin: 40px auto;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      .one, .two, .three, .four {
+        background-color: lightgreen;
+        padding: 5px 5px 10px 5px;
+        margin: 10px;
+        border-radius: 10px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: orange;
+      }
+
+      h1 {
+        text-align: center;
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="list">
+      <h1>My To-Do List</h1>
+
+      <div class="one">
+        <input type="checkbox" id="one" />
+        <label for="one">Exploring Gaming Keyboards</label>
+        <ul>
+          <li><a href="#">Store Link</a></li>
+        </ul>
+      </div>
+
+      <div class="two">
+        <input type="checkbox" id="two" />
+        <label for="two">Finish the Report</label>
+        <ul>
+          <li><a href="#">Request Access</a></li>
+        </ul>
+      </div>
+
+      <div class="three">
+        <input type="checkbox" id="three" />
+        <label for="three">Phones Warranty</label>
+        <ul>
+          <li><a href="#">View Receipts</a></li>
+        </ul>
+      </div>
+
+      <div class="four">
+        <input type="checkbox" id="four" />
+        <label for="four">Check Spaces</label>
+        <ul>
+          <li><a href="#">View Model Number</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </body>
+</html>
