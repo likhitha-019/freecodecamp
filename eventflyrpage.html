@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <style>
+      .first {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      .overall {
+        width: 500px;
+        height: 300px;
+        margin: 40px auto;
+      }
+
+      .about {
+        display: flex;
+        gap: 20px;
+        flex-direction: horizontal;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .inside {
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      img {
+        width: 400px;
+        height: 300px;
+      }
+
+      .text {
+        margin: 10px;
+      }
+
+      .footer {
+        text-align: center;
+      }
+
+      .one ul,
+      .two ul,
+      .three ul {
+        padding-left: 0;
+        margin-left: 0;
+      }
+
+      hr {
+        height: 2px;
+        width: 90%;
+        background-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="overall">
+      <div class="first">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD... (long base64)">
+        <h1>Pet Rock Festival</h1>
+        <p class="text">Join us for the first annual Pet Rock Festival!</p>
+        <p class="text">
+          <b>When:</b> October 3rd <b>Where:</b> Boulder Park
+        </p>
+      </div>
+
+      <hr>
+
+      <div class="about">
+        <div class="one">
+          <p class="inside">Festival Highlights</p>
+          <ul>
+            <li>Pet Rock Obedience Shows</li>
+            <li>Best Dressed Pet Rock Contest</li>
+            <li>Pet Rock Uphill Racing</li>
+          </ul>
+        </div>
+
+        <div class="two">
+          <p class="inside">Special Guests</p>
+          <ul>
+            <li>John Gravel</li>
+            <li>Wendy Cobblestone</li>
+          </ul>
+        </div>
+
+        <div class="three">
+          <p class="inside">Food Trucks</p>
+          <ul>
+            <li>Rock 'n' Roll Tacos</li>
+            <li>Granite Grill</li>
+            <li>Stone Cold Smoothies</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <footer>
+      <p class="footer">© 2025 Pet Rock Festival</p>
+    </footer>
+  </body>
+</html>
