@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      .grid {
+        width: 80%;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 20px;
+      }
+
+      .check {
+        position: relative;
+        border-radius: 5px;
+        height: 150px;
+        width: 300px;
+        border: 2px solid rgb(171, 167, 167);
+        text-align: center;
+        padding-top: 15px;
+      }
+
+      .cb {
+        position: absolute;
+        width: 40px;
+        height: 20px;
+        top: 10px;
+        right: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Feature Selection</h1>
+
+    <div class="grid">
+      <div class="check">
+        <input type="checkbox" class="cb">
+        <h2>Cloud Storage</h2>
+        <p>100 Gigabyte secure storage</p>
+      </div>
+
+      <div class="check">
+        <input type="checkbox" class="cb">
+        <h2>Dedicated Support</h2>
+        <p>24/7 customer help</p>
+      </div>
+
+      <div class="check">
+        <input type="checkbox" class="cb">
+        <h2>Advanced Analytics</h2>
+        <p>Insights & reports</p>
+      </div>
+
+      <div class="check">
+        <input type="checkbox" class="cb">
+        <h2>Custom User Themes</h2>
+        <p>Personalized dashboard design</p>
+      </div>
+
+      <div class="check">
+        <input type="checkbox" class="cb">
+        <h2>Multi-User Collab</h2>
+        <p>Team access and sharing</p>
+      </div>
+
+      <div class="check">
+        <input type="checkbox" class="cb">
+        <h2>Multi-User Collab</h2>
+        <p>Team access and sharing</p>
+      </div>
+    </div>
+  </body>
+</html>
