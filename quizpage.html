@@ -1,37 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    
-  </head>
-  <body>
-      <h1 >Student Info</h1>
-      <hr>
-      <input type="text" id="first">
-      <label for="first">Name:</label><br>
-      <input type="text" id="second">
-      <label for="second">Email: </label><br>
-      <input type="text" id="third">
-      <label for="third">Date of Birth: </label><br>
-      
-      <h2>HTML</h2>
-      <hr>
-      <h3>Question1</h3>
-      <p>The legend element represents a caption for the content of its parent fieldset element</p>
-      <input type="radio" id="fourth">
-      <label for="fourth">True</label> <br>
-      <input type="radio" id="fourth">
-      <label for="fourth">False</label>
-      
-      <h2>CSS</h2>
-      <hr>
-      <p>Can the CSS margin property accept negative values?</p>
-      <input type="select" id="five">
-      <option for="five">Yes</option>
-      <option for="five">No</option>
-      <p>Do you have any questions:</p>
-      <textarea></textarea>
-      <button type="submit">Send</button>
-      
-      
-  </body>
+<head>
+<title>Simple Quiz</title>
+
+<style>
+body{
+  font-family: Arial;
+  margin:0;
+}
+
+/* Simple navbar */
+nav{
+  background:black;
+  padding:15px;
+  position:fixed;
+  top:0;
+  width:100%;
+}
+
+nav a{
+  color:white;
+  margin:20px;
+  text-decoration:none;
+  font-size:18px;
+}
+
+section{
+  padding:100px 20px;
+}
+
+h2{
+  border-bottom:2px solid #ccc;
+  display:inline-block;
+  padding-bottom:5px;
+}
+label{
+  display:block;
+  margin-top:10px;
+}
+
+input, textarea, select{
+  display:block;
+  width:300px;
+  padding:8px;
+  margin-top:5px;
+}
+button{
+  margin-top:20px;
+  padding:10px 20px;
+  font-size:18px;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+  <a href="#info">INFO</a>
+  <a href="#html">HTML</a>
+  <a href="#css">CSS</a>
+</nav>
+
+<section id="info">
+  <h2>Student Info</h2>
+  
+  <label>Name:</label>
+  <input type="text">
+
+  <label>Email:</label>
+  <input type="email">
+
+  <label>Date of Birth:</label>
+  <input type="date">
+
+  <button onclick="goToHTML()">Start</button>
+</section>
+
+<section id="html">
+  <h2>HTML</h2>
+
+  <p>Question 1: The legend element is a caption for fieldset?</p>
+  <input type="radio" name="q1"> True  
+  <input type="radio" name="q1"> False  
+
+  <p>Question 2: A label needs a for attribute?</p>
+  <input type="radio" name="q2"> True  
+  <input type="radio" name="q2"> False  
+</section>
+
+<section id="css">
+  <h2>CSS</h2>
+
+  <label>Can margin be negative?</label>
+  <select>
+    <option>Select</option>
+    <option>Yes</option>
+    <option>No</option>
+  </select>
+
+  <label>Any questions?</label>
+  <textarea rows="5"></textarea>
+
+  <button>Send</button>
+</section>
+
+<script>
+function goToHTML(){
+  document.querySelector("#html").scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
 </html>
